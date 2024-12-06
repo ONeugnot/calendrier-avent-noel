@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Bayon&family=Big+Shoulders+Display:wght@100..900&family=Chango&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&family=League+Spartan:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+:root {
+	font-family: "Chango", sans-serif;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+main {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 10px;
+	background-color: #39511a;
+	gap: 10px;
+}
+
+button {
+	border: none;
+	font-size: 62px;
+	border-radius: 8px;
+	padding: 20px;
+	font-family: inherit;
+	transition-property: transform, color, background-color;
+	transition-duration: 1s;
+	transition-timing-function: ease-in-out;
+}
+²
+img {
+	display: none;
+}
+
+main button :hover {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.jaune {
+	background-color: #ffc776;
+	color: #402909;
+}
+
+.jaune:hover {
+	background-color: #402909;
+	color: #ffc776;
+	transform: scale(1.2) rotateY(-0.5turn);
+}
+
+.blue {
+	background-color: #baece7;
+	color: #214441;
+}
+
+.blue:hover {
+	color: #baece7;
+	background-color: #214441;
+	transform: scale(1.2) rotateY(-0.5turn);
+}
+
+.violet {
+	background-color: #e5d3e4;
+	color: #4d254a;
+}
+
+.violet:hover {
+	color: #e5d3e4;
+	background-color: #4d254a;
+	transform: scale(1.2) rotateY(-0.5turn);
+}
+
+.rouge {
+	background-color: #f26046;
+	color: white;
+}
+
+.rouge:hover {
+	color: #f26046;
+	background-color: white;
+	transform: scale(1.2) rotateY(-0.5turn);
+}
+
+.rouge img {
+	color: #f26046;
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		width: 80%;
+		border-radius: 8px;
+	}
+
+	img {
+		display: flex;
+		margin-top: 15px;
+	}
+
+	button {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	main {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+
+	button {
+		display: flex;
+		font-size: 86px;
+		flex-direction: row;
+		align-items: center;
+	}
+
+	img {
+		margin-bottom: 10px;
+	}
+}
